@@ -9,7 +9,6 @@ const menuReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_STATUS:
       let editedData = state.dataMenu.findIndex((data) => data.id === action.payload.id)
-      console.log(state.dataMenu[editedData])
       state.dataMenu[editedData] = action.payload
       return {
         ...state,
