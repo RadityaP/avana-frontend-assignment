@@ -5,6 +5,7 @@ import React from "react"
 import dropdown from "../../assets/down.png"
 
 const SidebarItem = (props) => {
+  //function for handling dropdown open or close
   const onClickButtonDropdown = (id) => {
     props.setIsChildHidden({
       ...props.isChildHidden,
@@ -12,18 +13,21 @@ const SidebarItem = (props) => {
     })
   }
 
-  const SecondChild = ({ secondChild, width }) => {
+  //function for handling If child menu has another child menu
+  const SecondChildSidebarItem = ({ secondChild, width }) => {
     return !secondChild.childs ? (
+      //if child doesn't has another child
       <li
-        className={`child py-3.5 relative px-10 ml-[60px] cursor-pointer"`}
+        className={`child py-3.5 relative px-10 ml-[60px] cursor-pointer`}
         style={{ width: width }}
       >
         {secondChild.name}
       </li>
     ) : (
+      //if child has another child
       <>
         <li
-          className={`child py-3.5 relative px-10 ml-[60px] cursor-pointer"`}
+          className={`child py-3.5 relative px-10 ml-[60px] cursor-pointer`}
           style={{ width: width }}
         >
           {secondChild.name}
@@ -38,8 +42,14 @@ const SidebarItem = (props) => {
         </li>
         {props.isChildHidden[secondChild.id] && (
           <ul className="child-container flex flex-col gap-3 ml-[60px] mt-2.5 items-end">
-            {secondChild.childs.map((child, i) => {
-              return <SecondChild secondChild={child} width={parseInt(width - 20)} />
+            {secondChild.childs.map((child, index) => {
+              return (
+                <SecondChildSidebarItem
+                  secondChild={child}
+                  width={parseInt(width - 20)}
+                  key={index}
+                />
+              )
             })}
           </ul>
         )}
@@ -48,7 +58,7 @@ const SidebarItem = (props) => {
   }
 
   return !props.data.childs ? (
-    <li className={`main-list px-[60px] py-3.5 relative "cursor-pointer`}>{props.data.name}</li>
+    <li className={`main-list px-[60px] py-3.5 relative cursor-pointer`}>{props.data.name}</li>
   ) : (
     <div className="have-childern">
       <li className={`main-list px-[60px] py-3.5 relative cursor-pointer`}>
@@ -66,7 +76,7 @@ const SidebarItem = (props) => {
       {props.isChildHidden[props.data.id] && (
         <ul className="child-container flex flex-col gap-3 ml-[60px] mt-2.5 items-end">
           {props.data.childs.map((child, index) => {
-            return <SecondChild secondChild={child} width={200} />
+            return <SecondChildSidebarItem secondChild={child} width={200} key={index} />
           })}
         </ul>
       )}

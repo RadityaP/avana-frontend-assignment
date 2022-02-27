@@ -12,7 +12,8 @@
   background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(55, 55, 55));
 }
 
-.active::after {
+.main-menu .main-list:hover::before,
+.child-container .child:hover::before {
   content: "";
   position: absolute;
   top: 0;
