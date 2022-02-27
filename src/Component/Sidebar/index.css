@@ -1,18 +1,5 @@
 .container::-webkit-scrollbar {
-  width: 10px;
-}
-
-.container::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-}
-
-.container::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: grey;
+  display: none;
 }
 
 .avatar-section .avatar-container {
@@ -20,7 +7,6 @@
 }
 
 .main-menu .main-list:hover,
-.child-container .child:hover,
 .active {
   position: relative;
   background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(55, 55, 55));
@@ -45,7 +31,7 @@
   content: "";
   top: 0;
   bottom: 0;
-  left: -60px;
+  left: -200px;
   right: 0;
   z-index: -1;
   background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(55, 55, 55));

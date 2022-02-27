@@ -1,0 +1,295 @@
+[
+  { "id": "dashboard", "name": "Dashboard", "isShowed": true, "isAllowed": true },
+  {
+    "id": "hq",
+    "name": "HQ",
+    "isShowed": false,
+    "isAllowed": false,
+    "childs": [
+      { "id": "hq_stockist", "name": "Stocklist", "isShowed": false, "isAllowed": false },
+      {
+        "id": "hq_dropship_affiliate",
+        "name": "Dropship Affiliate",
+        "isShowed": false,
+        "isAllowed": false
+      }
+    ]
+  },
+  {
+    "id": "agent",
+    "name": "Agent",
+    "isShowed": true,
+    "isAllowed": false,
+    "childs": [{ "id": "my_purchase", "name": "My Pruchase", "isShowed": true, "isAllowed": true }]
+  },
+  { "id": "orders", "name": "Orders", "isShowed": true, "isAllowed": true },
+  {
+    "id": "products",
+    "name": "Products",
+    "isShowed": true,
+    "isAllowed": true,
+    "childs": [
+      {
+        "id": "product-allproduct",
+        "name": "All Product",
+        "isShowed": true,
+        "isAllowed": true,
+        "childs": [
+          { "id": "product-add", "name": "Add", "isShowed": true, "isAllowed": true },
+          { "id": "product-import", "name": "Import", "isShowed": false, "isAllowed": false }
+        ]
+      },
+      { "id": "product-categories", "name": "Categories", "isShowed": true, "isAllowed": true },
+      { "id": "product-variations", "name": "Variations", "isShowed": true, "isAllowed": true },
+      { "id": "product-collections", "name": "Collections", "isShowed": true, "isAllowed": true }
+    ]
+  },
+  {
+    "id": "webstore",
+    "name": "Webstore",
+    "isShowed": true,
+    "isAllowed": true,
+    "childs": [
+      {
+        "id": "settings",
+        "name": "Settings",
+        "isShowed": true,
+        "isAllowed": true,
+        "childs": [
+          {
+            "id": "webstore-domain",
+            "name": "Domain",
+            "isShowed": true,
+            "isAllowed": true,
+            "childs": [
+              {
+                "id": "default-domain",
+                "name": "Default Domain",
+                "isShowed": true,
+                "isAllowed": true
+              },
+              {
+                "id": "custom-domain",
+                "name": "Custom Domain",
+                "isShowed": true,
+                "isAllowed": false
+              },
+              {
+                "id": "request-custom-domain",
+                "name": "Request Custom Domain",
+                "isShowed": false,
+                "isAllowed": false
+              }
+            ]
+          },
+          { "id": "webstore-logo", "name": "Logo", "isShowed": true, "isAllowed": true },
+          {
+            "id": "webstore-profile-photo",
+            "name": "Profile Photo",
+            "isShowed": true,
+            "isAllowed": true
+          },
+          { "id": "webstore-slider", "name": "Slider", "isShowed": true, "isAllowed": true },
+          {
+            "id": "webstore-mobile-friendly",
+            "name": "Mobile Friendly",
+            "isShowed": true,
+            "isAllowed": true
+          },
+          {
+            "id": "infinite-scroll",
+            "name": "Infinite Scroll",
+            "isShowed": true,
+            "isAllowed": true
+          },
+          {
+            "id": "home-page-product-display",
+            "name": "Homepage Product Display",
+            "isShowed": true,
+            "isAllowed": false
+          },
+          {
+            "id": "show-filter-control",
+            "name": "Show Filter Control",
+            "isShowed": true,
+            "isAllowed": false
+          }
+        ]
+      },
+      { "id": "google-analytic", "name": "Google Analytic", "isShowed": true, "isAllowed": true },
+      { "id": "themes", "name": "Themes", "isShowed": true, "isAllowed": true },
+      { "id": "pages", "name": "Pages", "isShowed": true, "isAllowed": true },
+      { "id": "seo", "name": "SEO", "isShowed": true, "isAllowed": true },
+      {
+        "id": "checkout-additional-info",
+        "name": "Checkout Additional Info",
+        "isShowed": true,
+        "isAllowed": false
+      },
+      { "id": "store-newsletter", "name": "Store Newsletter", "isShowed": true, "isAllowed": false }
+    ]
+  },
+  {
+    "id": "settings",
+    "name": "Settings",
+    "isShowed": true,
+    "isAllowed": true,
+    "childs": [
+      { "id": "shop-manager", "name": "Shop Manager", "isShowed": false, "isAllowed": false },
+      {
+        "id": "store-information",
+        "name": "Store Information",
+        "isShowed": true,
+        "isAllowed": true
+      },
+      {
+        "id": "shipping",
+        "name": "Shipping",
+        "isShowed": true,
+        "isAllowed": true,
+        "childs": [
+          {
+            "id": "couriers",
+            "name": "Couriers",
+            "isShowed": true,
+            "isAllowed": true,
+            "childs": [
+              { "id": "poslaju", "name": "Pos Laju", "isShowed": false, "isAllowed": false },
+              {
+                "id": "poslaju_international",
+                "name": "Poslaju International",
+                "isShowed": false,
+                "isAllowed": false
+              },
+              { "id": "citylink", "name": "Citylink", "isShowed": false, "isAllowed": false },
+              { "id": "flexipack", "name": "Flexipack", "isShowed": false, "isAllowed": false },
+              { "id": "janio", "name": "Janio", "isShowed": true, "isAllowed": false },
+              {
+                "id": "jne_domestic_regular",
+                "name": "JNE Domestic Regular",
+                "isShowed": true,
+                "isAllowed": true
+              },
+              { "id": "shipper", "name": "Shipper", "isShowed": true, "isAllowed": false }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "payment",
+        "name": "Payment",
+        "isShowed": true,
+        "isAllowed": true,
+        "childs": [
+          { "id": "avapay", "name": "Avapay", "isShowed": true, "isAllowed": true },
+          { "id": "credit-card", "name": "Credit Card", "isShowed": true, "isAllowed": false },
+          { "id": "paypal", "name": "Paypal", "isShowed": false, "isAllowed": false },
+          { "id": "molpay", "name": "Molpay", "isShowed": false, "isAllowed": false },
+          { "id": "manual-payment", "name": "Manual Payment", "isShowed": true, "isAllowed": false }
+        ]
+      },
+      { "id": "invoicing", "name": "Invoicing", "isShowed": true, "isAllowed": true },
+      { "id": "developer", "name": "Developer", "isShowed": true, "isAllowed": false },
+      { "id": "tax-information", "name": "Tax Information", "isShowed": true, "isAllowed": true }
+    ]
+  },
+  {
+    "id": "modules",
+    "name": "Modules",
+    "isShowed": true,
+    "isAllowed": true,
+    "childs": [
+      { "id": "all-module", "name": "All Module", "isShowed": true, "isAllowed": true },
+      { "id": "google-shopping", "name": "Google Shopping", "isShowed": true, "isAllowed": true },
+      { "id": "coupon-code", "name": "Coupon Code", "isShowed": true, "isAllowed": true },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "isShowed": true,
+        "isAllowed": true,
+        "childs": [
+          {
+            "id": "facebook-marketing",
+            "name": "Facebook Marketing",
+            "isShowed": true,
+            "isAllowed": false
+          },
+          {
+            "id": "facebook-page",
+            "name": "Facebook Page",
+            "isShowed": true,
+            "isAllowed": true,
+            "childs": [
+              {
+                "id": "fb-link-to-page",
+                "name": "Link to Page",
+                "isShowed": true,
+                "isAllowed": true
+              },
+              {
+                "id": "fb-unlink-page",
+                "name": "Unlink Page",
+                "isShowed": true,
+                "isAllowed": true
+              },
+              {
+                "id": "fb-change-adaccount",
+                "name": "Change Adaccount",
+                "isShowed": true,
+                "isAllowed": true
+              },
+              { "id": "fb-shop", "name": "Shop", "isShowed": true, "isAllowed": true },
+              {
+                "id": "auto-pm-order",
+                "name": "Auto PM Order",
+                "isShowed": true,
+                "isAllowed": true
+              }
+            ]
+          },
+          {
+            "id": "facebook-fanpage-autorepy",
+            "name": "Fanpage Autorepy",
+            "isShowed": false,
+            "isAllowed": false
+          }
+        ]
+      },
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "isShowed": true,
+        "isAllowed": true,
+        "childs": [
+          {
+            "id": "instagram-connect",
+            "name": "Instagram Connect",
+            "isShowed": true,
+            "isAllowed": true
+          },
+          {
+            "id": "instagram-comment-order",
+            "name": "Instagram Comment Order",
+            "isShowed": false,
+            "isAllowed": false
+          }
+        ]
+      },
+      {
+        "id": "messenger",
+        "name": "Messanger",
+        "isShowed": true,
+        "isAllowed": true,
+        "childs": [
+          { "id": "messenger-settings", "name": "Settings", "isShowed": true, "isAllowed": false },
+          { "id": "messenger-blast", "name": "Blast", "isShowed": true, "isAllowed": false }
+        ]
+      },
+      { "id": "blogspot", "name": "Blogspot", "isShowed": true, "isAllowed": true },
+      { "id": "twitter", "name": "Twitter", "isShowed": true, "isAllowed": true },
+      { "id": "whatsapp", "name": "Whatsapp", "isShowed": true, "isAllowed": true },
+      { "id": "avacredit", "name": "Avacredit", "isShowed": false, "isAllowed": false },
+      { "id": "avachat", "name": "Avachat", "isShowed": false, "isAllowed": false }
+    ]
+  }
+]
