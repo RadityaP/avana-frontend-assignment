@@ -1,17 +1,18 @@
 //import package
 import React, { useState } from "react"
+import { useSelector } from "react-redux"
 
 //import assets and style
 import logo from "../../assets/logo.webp"
 import avatar from "../../assets/avatar.png"
 import "./index.css"
-import dataArr from "../../data/dummy-menu.json"
 
 //import component
 import SidebarItem from "./SidebarItem"
 
 const Sidebar = () => {
   const [isChildHidden, setIsChildHidden] = useState({})
+  const { dataMenu } = useSelector((state) => state.menu)
 
   return (
     <div className="container w-72 fixed flex flex-col items-center gap-10 inset-y-0 py-10 bg-navbg overflow-y-scroll">
@@ -26,7 +27,7 @@ const Sidebar = () => {
       </div>
       {/* Sidebar Menu */}
       <ul className="main-menu self-start flex flex-col w-full gap-3 text-navtext">
-        {dataArr.map((data, index) => {
+        {dataMenu.map((data, index) => {
           return (
             <SidebarItem
               data={data}
