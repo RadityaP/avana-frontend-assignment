@@ -1,0 +1,62 @@
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: grey;
+}
+
+.avatar-section .avatar-container {
+  background: white;
+}
+
+.main-menu .main-list:hover,
+.child-container .child:hover,
+.active {
+  position: relative;
+  background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(55, 55, 55));
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 5px;
+  background: rgb(236, 173, 3);
+}
+
+.child-container .child {
+  border-bottom: 1px solid white;
+}
+
+.child-container .child:hover:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: -60px;
+  right: 0;
+  z-index: -1;
+  background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(55, 55, 55));
+}
+
+.dropdown-icon {
+  transform: translateY(-50%);
+  transition: all 0.25s ease-out;
+}
+
+.rotate {
+  transform: translateY(-50%) rotate(180deg);
+  transition: all 0.25s ease-out;
+}
